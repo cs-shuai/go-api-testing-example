@@ -1,0 +1,49 @@
+[
+  {
+    "request_url": "manager/pm_user/user_login",
+    "request_data_url": "login.json",
+    "request_data": [
+      {
+        "username": "丛力强",
+        "pwd": "123",
+        "response": "操作成功"
+      },
+      {
+        "username": "auto",
+        "pwd": "123",
+        "response": "用户不存在"
+      }
+    ],
+    "type": "Post",
+    "addr": "PmToken"
+  },
+  {
+    "request_url": "manager/pm_member/select_members",
+    "request_data_url": "select_member.json",
+    "request_data": [
+      {
+        "page_size": "1",
+        "page_no": "1",
+        "select": "",
+        "timeformat": "",
+        "time": "",
+        "desc": "",
+        "asc": "",
+        "status": "",
+        "tag_id": "",
+        "task_id": "我是禅道号",
+        "response": "操作成功",
+        "before": [
+          {
+            "url": "manager/pm_user/user_login",
+            "before_key": "token",
+            "key": "PmToken",
+            "is_header": true
+          }
+        ]
+      }
+    ],
+    "type": "Get",
+    "addr": "PmToken"
+  }
+]

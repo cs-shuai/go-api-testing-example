@@ -1,0 +1,9 @@
+/vendor/
+.idea
+lastupdate.tmp
+!routers/router.go
+swagger/swagger.json
+swagger/swagger.yml
+*.exe
+logs/*
+images/*
